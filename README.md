@@ -20,23 +20,15 @@ Selain folder, dalam repositori ini terdapat dua file penting, yaitu "SCRAPPING_
 # File "SCRAPPING_PN_PALANGKARAYA_093.ipynb":
 File ini digunakan untuk melakukan proses pengambilan data putusan pengadilan terkait dan menyimpannya dalam bentuk DataFrame (tabel) dengan menggunakan modul-modul seperti requests, BeautifulSoup, dan pandas. Berikut adalah penjelasan langkah-langkah dari kode yang terdapat dalam file ini:
 
-Import Modul: Dalam bagian ini, modul-modul yang diperlukan, seperti requests, BeautifulSoup, dan pandas, diimpor agar dapat digunakan dalam pengambilan dan pengolahan data.
-
-Mendefinisikan URL: URL dari halaman web yang berisi data putusan pengadilan ditentukan di sini.
-
-Mengambil Halaman Web: Dengan menggunakan modul requests, halaman web diambil untuk proses selanjutnya.
-
-Parsing Halaman Web: Halaman web yang telah diunduh diproses dan diurai menggunakan modul BeautifulSoup.
-
-Mencari Tabel HTML: Dalam bagian ini, kode mencari elemen-elemen tabel dalam halaman web yang akan digunakan untuk ekstraksi data.
-
-Mendapatkan Data Kolom Tabel: Data judul kolom tabel ditemukan dan disimpan.
-
-Membuat DataFrame: Sebuah DataFrame kosong dibuat dengan menggunakan judul kolom yang telah ditemukan sebelumnya.
-
-Mengambil Data Baris Tabel: Data dari baris-baris tabel diambil dan dimasukkan ke dalam DataFrame sesuai dengan kolom yang sesuai.
-
-Memproses dan Menyimpan Data: Kolom-kolom yang kosong dihapus, dan data akhir disimpan dalam bentuk file CSV dengan nama "pn_palangkaraya.csv."
+1. Import Modul: Dalam bagian ini, modul-modul yang diperlukan, seperti requests, BeautifulSoup, dan pandas, diimpor agar dapat digunakan dalam pengambilan dan pengolahan data.
+2. Mendefinisikan URL: URL dari halaman web yang berisi data putusan pengadilan ditentukan di sini.
+3. Mengambil Halaman Web: Dengan menggunakan modul requests, halaman web diambil untuk proses selanjutnya.
+4. Parsing Halaman Web: Halaman web yang telah diunduh diproses dan diurai menggunakan modul BeautifulSoup.
+5. Mencari Tabel HTML: Dalam bagian ini, kode mencari elemen-elemen tabel dalam halaman web yang akan digunakan untuk ekstraksi data.
+6. Mendapatkan Data Kolom Tabel: Data judul kolom tabel ditemukan dan disimpan.
+7. Membuat DataFrame: Sebuah DataFrame kosong dibuat dengan menggunakan judul kolom yang telah ditemukan sebelumnya.
+8. Mengambil Data Baris Tabel: Data dari baris-baris tabel diambil dan dimasukkan ke dalam DataFrame sesuai dengan kolom yang sesuai.
+9. Memproses dan Menyimpan Data: Kolom-kolom yang kosong dihapus, dan data akhir disimpan dalam bentuk file CSV dengan nama "pn_palangkaraya.csv."
 
 Semua langkah tersebut dirancang untuk mengambil data dari sejumlah URL yang telah ditentukan, menggabungkannya menjadi satu DataFrame, dan menyimpannya dalam format file CSV dengan nama "pn_palangkaraya.csv."
 
